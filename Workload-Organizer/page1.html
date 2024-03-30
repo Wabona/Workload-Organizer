@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "page1.css">
+    <link rel="stylesheet" href="page1.css">
     <title>Page1</title>
 </head>
+
 <body>
     <h1> Workload Organizer </h1>
-    <div id = "choices">
-        <form action = "">
+    <div id="choices">
+        <form id="assign_choice" action= "">
             <h3> Select the Assignment Type</h3>
-            <input type="radio" id="assignment_type" name ="assignment_group">
-            <label for = "assignment_type"> Essay </label>
+            <input type="radio" id="essay_type" name="assignment_group" value="Essay">
+            <label for="assignment_type"> Essay </label>
             <br>
-            <input type="radio" id="assignment_type" name ="assignment_group">
-            <label for = "assignment_type"> Projects </label>
+            <input type="radio" id="project_type" name="assignment_group" value="Projects">
+            <label for="assignment_type"> Projects </label>
             <br>
-            <input type="radio" id="assignment_type" name ="assignment_group">
-            <label for = "assignment_type"> Other </label>
+            <input type="radio" id="other_type" name="assignment_group" value ="Other">
+            <label for="assignment_type"> Other </label>
             <br>
         </form>
-
-    <form action = "">
-        <div id="button">
-            <button>Submit!</button>
-        </div>
-    </form>
-</div>
-
+            <div id="button">
+                <button onClick="eventHappen()">Submit!</button>
+            </div>
+    </div>
+    <script>
+        // document.getElementById("assign_choice").addEventListener("submit", function(event){
+        //     let selectedOption = document.querySelector('input[name="assignment_group"]:checked').value;
+        //     if(selectedOption === "Essay"){
+        //         window.location.href = "/essay.html";
+        //     }
+        // });
+        function eventHappen(){
+            var selectedOpt = document.querySelector('input[name="assignment_group"]:checked').value;
+            if(selectedOpt == "Essay"){
+                window.location.href = "/essay.html";
+            }else if(selectedOpt == "Projects"){
+                window.location.href = "/projects.html";
+            }else{
+                window.location.href = "/other.html";
+            }
+        }
+    </script>
+    
 </body>
+
 </html>
