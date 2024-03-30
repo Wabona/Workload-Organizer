@@ -26,7 +26,8 @@
             </select>
           
             <h3> Duration</h3>
-            <select name ="difficulty_type" id = "difficulty_type">
+            <select name ="length" id = "length" onchange = "getSelectValue()">
+                <option value="Select Option">Select Option</option>
                 <option value = "immediate"> Immediate (0-2 days)</option>
                 <option value = "short"> Short (3-6 days)</option>
                 <option value = "medium"> Medium (7-14 days) </option>
@@ -42,6 +43,11 @@
     </div>
 </body>
 <script>
-
+    function getSelectValue(){
+        var selectedValue = document.getElementById("length").value;
+        if (selectedValue == "immediate") {
+            window.location.href = "/fail.html";
+        }
+    }
 </script>
 </html>

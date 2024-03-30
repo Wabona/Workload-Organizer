@@ -1,0 +1,13 @@
+/* .list_items{
+    text-align: center;
+} */
+h1{
+    text-align: center;
+}
+.list_items {
+    position: absolute;
+    top: 15%;
+    right: 40%;
+    margin: 20;
+}
+

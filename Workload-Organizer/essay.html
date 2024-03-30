@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href ="/essay.css">
-    
+    <link rel="stylesheet" href="/essay.css">
+
     <title>Assingment Page</title>
 </head>
+
 <body>
     <h1> Workload Organizer</h1>
-    <form action = "">
-    <div id = "choices">
-        <h3> Assignment Type </h3>
-            <input type="radio" id="assignment_type" name ="assignment_group">
-            <label for = "assignment_type"> Narrative </label>
+    <form action="">
+        <div id="choices">
+            <h3> Assignment Type </h3>
+            <input type="radio" id="narrative" name="assignment_group1" value="narrative">
+            <label for="research"> Narrative </label>
             <br>
-            <input type="radio" id="assignment_type" name ="assignment_group">
-            <label for = "assignment_type"> Research </label>
-        
-        <h3> Difficulty</h3>
-            <select name ="difficulty_type" id = "difficulty_type">
-                <option value = "1"> Easy</option>
-                <option value = "1.25"> Medium </option>
-                <option value = "1.5"> Hard </option>
+            <input type="radio" id="research" name="assignment_group1" value="research">
+            <label for="research"> Research </label>
+
+            <h3> Difficulty</h3>
+            <select name="difficulty_type" id="difficulty_type">
+                <option value="easy"> Easy</option>
+                <option value="medium"> Medium </option>
+                <option value="hard"> Hard </option>
             </select>
-          
+
             <h3> Duration</h3>
-            <select name ="difficulty_type" id = "difficulty_type">
-                <option value = "immediate"> Immediate (0-2 days)</option>
-                <option value = "short"> Short (3-6 days)</option>
-                <option value = "medium"> Medium (7-14 days) </option>
-                <option value = "hard"> Long (14+ days)</option>
+            <select name="length" id="length" onchange="getSelectValue()">
+                <option value="Select Option">Select Option</option>
+                <option value="immediate"> Immediate (0-2 days)</option>
+                <option value="short"> Short (3-6 days)</option>
+                <option value="medium"> Medium (7-14 days) </option>
+                <option value="long"> Long (14+ days)</option>
             </select>
 
-        
-        <form action = >
             <div id="button">
-                <button>Submit!</button>
+                <button onclick="getSelectValue()">Submit!</button>
             </div>
-        </form>
-    </div>
+        </div>
 </body>
-<script>
+<script src ="/essay.js"></script>
 
-</script>
 </html>

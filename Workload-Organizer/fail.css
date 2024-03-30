@@ -1,11 +1,13 @@
 h1{
     text-align: center;
 }
-
+h2{
+    text-align: center;
+}
 #button {
-    margin: 15;
+    margin: 0;
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);

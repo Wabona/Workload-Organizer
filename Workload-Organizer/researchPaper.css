@@ -1,0 +1,9 @@
+h1{
+    text-align: center;
+}
+.list_items {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    margin: 20;
+}
