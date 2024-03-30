@@ -14,6 +14,6 @@ function getSelectValue(){
     if (selectedDur == "short" && selectedDiff == "easy" && selectedType == "narrative"){
         window.location.href = "/shortEssay.html";
     }else if(selectedDur == "long" && selectedDiff == "hard" && selectedType == "research"){
-        window.location.href = "/researchPaper.html";
+        window.location.href = '/researchPaper.html';
     }
 }
